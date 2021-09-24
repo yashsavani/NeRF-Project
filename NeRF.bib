@@ -1,0 +1,458 @@
+
+@article{chibane_stereo_2021,
+	title = {Stereo {Radiance} {Fields} ({SRF}): {Learning} {View} {Synthesis} for {Sparse} {Views} of {Novel} {Scenes}},
+	shorttitle = {Stereo {Radiance} {Fields} ({SRF})},
+	url = {http://arxiv.org/abs/2104.06935},
+	abstract = {Recent neural view synthesis methods have achieved impressive quality and realism, surpassing classical pipelines which rely on multi-view reconstruction. State-of-the-Art methods, such as NeRF, are designed to learn a single scene with a neural network and require dense multi-view inputs. Testing on a new scene requires re-training from scratch, which takes 2-3 days. In this work, we introduce Stereo Radiance Fields (SRF), a neural view synthesis approach that is trained end-to-end, generalizes to new scenes, and requires only sparse views at test time. The core idea is a neural architecture inspired by classical multi-view stereo methods, which estimates surface points by finding similar image regions in stereo images. In SRF, we predict color and density for each 3D point given an encoding of its stereo correspondence in the input images. The encoding is implicitly learned by an ensemble of pair-wise similarities -- emulating classical stereo. Experiments show that SRF learns structure instead of overfitting on a scene. We train on multiple scenes of the DTU dataset and generalize to new ones without re-training, requiring only 10 sparse and spread-out views as input. We show that 10-15 minutes of fine-tuning further improve the results, achieving significantly sharper, more detailed results than scene-specific models. The code, model, and videos are available at https://virtualhumans.mpi-inf.mpg.de/srf/.},
+	urldate = {2021-09-20},
+	journal = {arXiv:2104.06935 [cs]},
+	author = {Chibane, Julian and Bansal, Aayush and Lazova, Verica and Pons-Moll, Gerard},
+	month = apr,
+	year = {2021},
+	note = {arXiv: 2104.06935},
+	keywords = {Computer Science - Machine Learning, Computer Science - Computer Vision and Pattern Recognition},
+	annote = {Comment: IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2021},
+	file = {arXiv Fulltext PDF:/Users/yashsavani/Zotero/storage/ACNJX3HX/Chibane et al. - 2021 - Stereo Radiance Fields (SRF) Learning View Synthe.pdf:application/pdf;arXiv.org Snapshot:/Users/yashsavani/Zotero/storage/ZL28M455/2104.html:text/html},
+}
+
+@article{chen_mvsnerf_2021,
+	title = {{MVSNeRF}: {Fast} {Generalizable} {Radiance} {Field} {Reconstruction} from {Multi}-{View} {Stereo}},
+	shorttitle = {{MVSNeRF}},
+	url = {http://arxiv.org/abs/2103.15595},
+	abstract = {We present MVSNeRF, a novel neural rendering approach that can efficiently reconstruct neural radiance fields for view synthesis. Unlike prior works on neural radiance fields that consider per-scene optimization on densely captured images, we propose a generic deep neural network that can reconstruct radiance fields from only three nearby input views via fast network inference. Our approach leverages plane-swept cost volumes (widely used in multi-view stereo) for geometry-aware scene reasoning, and combines this with physically based volume rendering for neural radiance field reconstruction. We train our network on real objects in the DTU dataset, and test it on three different datasets to evaluate its effectiveness and generalizability. Our approach can generalize across scenes (even indoor scenes, completely different from our training scenes of objects) and generate realistic view synthesis results using only three input images, significantly outperforming concurrent works on generalizable radiance field reconstruction. Moreover, if dense images are captured, our estimated radiance field representation can be easily fine-tuned; this leads to fast per-scene reconstruction with higher rendering quality and substantially less optimization time than NeRF.},
+	urldate = {2021-09-20},
+	journal = {arXiv:2103.15595 [cs]},
+	author = {Chen, Anpei and Xu, Zexiang and Zhao, Fuqiang and Zhang, Xiaoshuai and Xiang, Fanbo and Yu, Jingyi and Su, Hao},
+	month = aug,
+	year = {2021},
+	note = {arXiv: 2103.15595},
+	keywords = {Computer Science - Computer Vision and Pattern Recognition},
+	annote = {Comment: Project Page: https://apchenstu.github.io/mvsnerf/ Code:https://github.com/apchenstu/mvsnerf},
+	file = {arXiv Fulltext PDF:/Users/yashsavani/Zotero/storage/B3KRKCSH/Chen et al. - 2021 - MVSNeRF Fast Generalizable Radiance Field Reconst.pdf:application/pdf;arXiv.org Snapshot:/Users/yashsavani/Zotero/storage/6C6RYIAX/2103.html:text/html},
+}
+
+@article{zhang_nerf_2020,
+	title = {{NeRF}++: {Analyzing} and {Improving} {Neural} {Radiance} {Fields}},
+	shorttitle = {{NeRF}++},
+	url = {http://arxiv.org/abs/2010.07492},
+	abstract = {Neural Radiance Fields (NeRF) achieve impressive view synthesis results for a variety of capture settings, including 360 capture of bounded scenes and forward-facing capture of bounded and unbounded scenes. NeRF fits multi-layer perceptrons (MLPs) representing view-invariant opacity and view-dependent color volumes to a set of training images, and samples novel views based on volume rendering techniques. In this technical report, we first remark on radiance fields and their potential ambiguities, namely the shape-radiance ambiguity, and analyze NeRF's success in avoiding such ambiguities. Second, we address a parametrization issue involved in applying NeRF to 360 captures of objects within large-scale, unbounded 3D scenes. Our method improves view synthesis fidelity in this challenging scenario. Code is available at https://github.com/Kai-46/nerfplusplus.},
+	urldate = {2021-09-20},
+	journal = {arXiv:2010.07492 [cs]},
+	author = {Zhang, Kai and Riegler, Gernot and Snavely, Noah and Koltun, Vladlen},
+	month = oct,
+	year = {2020},
+	note = {arXiv: 2010.07492},
+	keywords = {Computer Science - Computer Vision and Pattern Recognition},
+	annote = {Comment: Code is available at https://github.com/Kai-46/nerfplusplus; fix a minor formatting issue in Fig. 4},
+	file = {arXiv Fulltext PDF:/Users/yashsavani/Zotero/storage/J5WXKRNY/Zhang et al. - 2020 - NeRF++ Analyzing and Improving Neural Radiance Fi.pdf:application/pdf;arXiv.org Snapshot:/Users/yashsavani/Zotero/storage/Q44GSHU5/2010.html:text/html},
+}
+
+@article{lin_barf_2021,
+	title = {{BARF}: {Bundle}-{Adjusting} {Neural} {Radiance} {Fields}},
+	shorttitle = {{BARF}},
+	url = {http://arxiv.org/abs/2104.06405},
+	abstract = {Neural Radiance Fields (NeRF) have recently gained a surge of interest within the computer vision community for its power to synthesize photorealistic novel views of real-world scenes. One limitation of NeRF, however, is its requirement of accurate camera poses to learn the scene representations. In this paper, we propose Bundle-Adjusting Neural Radiance Fields (BARF) for training NeRF from imperfect (or even unknown) camera poses -- the joint problem of learning neural 3D representations and registering camera frames. We establish a theoretical connection to classical image alignment and show that coarse-to-fine registration is also applicable to NeRF. Furthermore, we show that na{\textbackslash}"ively applying positional encoding in NeRF has a negative impact on registration with a synthesis-based objective. Experiments on synthetic and real-world data show that BARF can effectively optimize the neural scene representations and resolve large camera pose misalignment at the same time. This enables view synthesis and localization of video sequences from unknown camera poses, opening up new avenues for visual localization systems (e.g. SLAM) and potential applications for dense 3D mapping and reconstruction.},
+	urldate = {2021-09-20},
+	journal = {arXiv:2104.06405 [cs]},
+	author = {Lin, Chen-Hsuan and Ma, Wei-Chiu and Torralba, Antonio and Lucey, Simon},
+	month = aug,
+	year = {2021},
+	note = {arXiv: 2104.06405},
+	keywords = {Computer Science - Machine Learning, Computer Science - Computer Vision and Pattern Recognition, Computer Science - Graphics, Computer Science - Robotics},
+	annote = {Comment: Accepted to ICCV 2021 as oral presentation (project page \& code: https://chenhsuanlin.bitbucket.io/bundle-adjusting-NeRF)},
+	file = {arXiv Fulltext PDF:/Users/yashsavani/Zotero/storage/2P3A4BYD/Lin et al. - 2021 - BARF Bundle-Adjusting Neural Radiance Fields.pdf:application/pdf;arXiv.org Snapshot:/Users/yashsavani/Zotero/storage/IVYZANFN/2104.html:text/html},
+}
+
+@article{peng_animatable_2021,
+	title = {Animatable {Neural} {Radiance} {Fields} for {Human} {Body} {Modeling}},
+	url = {http://arxiv.org/abs/2105.02872},
+	abstract = {This paper addresses the challenge of reconstructing an animatable human model from a multi-view video. Some recent works have proposed to decompose a dynamic scene into a canonical neural radiance field and a set of deformation fields that map observation-space points to the canonical space, thereby enabling them to learn the dynamic scene from images. However, they represent the deformation field as translational vector field or SE(3) field, which makes the optimization highly under-constrained. Moreover, these representations cannot be explicitly controlled by input motions. Instead, we introduce neural blend weight fields to produce the deformation fields. Based on the skeleton-driven deformation, blend weight fields are used with 3D human skeletons to generate observation-to-canonical and canonical-to-observation correspondences. Since 3D human skeletons are more observable, they can regularize the learning of deformation fields. Moreover, the learned blend weight fields can be combined with input skeletal motions to generate new deformation fields to animate the human model. Experiments show that our approach significantly outperforms recent human synthesis methods. The code will be available at https://zju3dv.github.io/animatable\_nerf/.},
+	urldate = {2021-09-20},
+	journal = {arXiv:2105.02872 [cs]},
+	author = {Peng, Sida and Dong, Junting and Wang, Qianqian and Zhang, Shangzhan and Shuai, Qing and Bao, Hujun and Zhou, Xiaowei},
+	month = may,
+	year = {2021},
+	note = {arXiv: 2105.02872},
+	keywords = {Computer Science - Computer Vision and Pattern Recognition},
+	annote = {Comment: The first two authors contributed equally to this paper. Project page: https://zju3dv.github.io/animatable\_nerf/},
+	file = {arXiv Fulltext PDF:/Users/yashsavani/Zotero/storage/A8LQI6QG/Peng et al. - 2021 - Animatable Neural Radiance Fields for Human Body M.pdf:application/pdf;arXiv.org Snapshot:/Users/yashsavani/Zotero/storage/TGGI2L77/2105.html:text/html},
+}
+
+@article{kosiorek_nerf-vae_2021,
+	title = {{NeRF}-{VAE}: {A} {Geometry} {Aware} {3D} {Scene} {Generative} {Model}},
+	shorttitle = {{NeRF}-{VAE}},
+	url = {http://arxiv.org/abs/2104.00587},
+	abstract = {We propose NeRF-VAE, a 3D scene generative model that incorporates geometric structure via NeRF and differentiable volume rendering. In contrast to NeRF, our model takes into account shared structure across scenes, and is able to infer the structure of a novel scene -- without the need to re-train -- using amortized inference. NeRF-VAE's explicit 3D rendering process further contrasts previous generative models with convolution-based rendering which lacks geometric structure. Our model is a VAE that learns a distribution over radiance fields by conditioning them on a latent scene representation. We show that, once trained, NeRF-VAE is able to infer and render geometrically-consistent scenes from previously unseen 3D environments using very few input images. We further demonstrate that NeRF-VAE generalizes well to out-of-distribution cameras, while convolutional models do not. Finally, we introduce and study an attention-based conditioning mechanism of NeRF-VAE's decoder, which improves model performance.},
+	urldate = {2021-09-20},
+	journal = {arXiv:2104.00587 [cs, stat]},
+	author = {Kosiorek, Adam R. and Strathmann, Heiko and Zoran, Daniel and Moreno, Pol and Schneider, Rosalia and Mokrá, Soňa and Rezende, Danilo J.},
+	month = apr,
+	year = {2021},
+	note = {arXiv: 2104.00587},
+	keywords = {Computer Science - Machine Learning, Statistics - Machine Learning},
+	annote = {Comment: 17 pages, 15 figures, under review},
+	file = {arXiv Fulltext PDF:/Users/yashsavani/Zotero/storage/DUCTKHTC/Kosiorek et al. - 2021 - NeRF-VAE A Geometry Aware 3D Scene Generative Mod.pdf:application/pdf;arXiv.org Snapshot:/Users/yashsavani/Zotero/storage/65B2N5DI/2104.html:text/html},
+}
+
+@article{jang_codenerf_2021,
+	title = {{CodeNeRF}: {Disentangled} {Neural} {Radiance} {Fields} for {Object} {Categories}},
+	shorttitle = {{CodeNeRF}},
+	url = {http://arxiv.org/abs/2109.01750},
+	abstract = {CodeNeRF is an implicit 3D neural representation that learns the variation of object shapes and textures across a category and can be trained, from a set of posed images, to synthesize novel views of unseen objects. Unlike the original NeRF, which is scene specific, CodeNeRF learns to disentangle shape and texture by learning separate embeddings. At test time, given a single unposed image of an unseen object, CodeNeRF jointly estimates camera viewpoint, and shape and appearance codes via optimization. Unseen objects can be reconstructed from a single image, and then rendered from new viewpoints or their shape and texture edited by varying the latent codes. We conduct experiments on the SRN benchmark, which show that CodeNeRF generalises well to unseen objects and achieves on-par performance with methods that require known camera pose at test time. Our results on real-world images demonstrate that CodeNeRF can bridge the sim-to-real gap. Project page: {\textbackslash}url\{https://github.com/wayne1123/code-nerf\}},
+	urldate = {2021-09-20},
+	journal = {arXiv:2109.01750 [cs]},
+	author = {Jang, Wonbong and Agapito, Lourdes},
+	month = sep,
+	year = {2021},
+	note = {arXiv: 2109.01750},
+	keywords = {Computer Science - Computer Vision and Pattern Recognition, Computer Science - Graphics, Computer Science - Machine Learning},
+	annote = {Comment: 10 pages, 15 figures, ICCV 2021},
+	file = {arXiv Fulltext PDF:/Users/yashsavani/Zotero/storage/UZ5SNKPD/Jang and Agapito - 2021 - CodeNeRF Disentangled Neural Radiance Fields for .pdf:application/pdf;arXiv.org Snapshot:/Users/yashsavani/Zotero/storage/698SJ4QA/2109.html:text/html},
+}
+
+@misc{lin_awesome_2021,
+	title = {Awesome {Neural} {Radiance} {Fields}},
+	copyright = {MIT},
+	url = {https://github.com/yenchenlin/awesome-NeRF},
+	abstract = {A curated list of awesome neural radiance fields papers},
+	urldate = {2021-09-20},
+	author = {Lin, Yen-Chen},
+	month = sep,
+	year = {2021},
+	note = {original-date: 2020-11-26T16:10:56Z},
+	keywords = {nerf},
+}
+
+@misc{lin_nerf-pytorch_2021,
+	title = {{NeRF}-pytorch},
+	copyright = {MIT},
+	url = {https://github.com/yenchenlin/nerf-pytorch},
+	abstract = {A PyTorch implementation of NeRF (Neural Radiance Fields) that reproduces the results.},
+	urldate = {2021-09-20},
+	author = {Lin, Yen-Chen},
+	month = sep,
+	year = {2021},
+	note = {original-date: 2020-04-05T08:29:57Z},
+}
+
+@article{dellaert_neural_2021,
+	title = {Neural {Volume} {Rendering}: {NeRF} {And} {Beyond}},
+	shorttitle = {Neural {Volume} {Rendering}},
+	url = {http://arxiv.org/abs/2101.05204},
+	abstract = {Besides the COVID-19 pandemic and political upheaval in the US, 2020 was also the year in which neural volume rendering exploded onto the scene, triggered by the impressive NeRF paper by Mildenhall et al. (2020). Both of us have tried to capture this excitement, Frank on a blog post (Dellaert, 2020) and Yen-Chen in a Github collection (Yen-Chen, 2020). This note is an annotated bibliography of the relevant papers, and we posted the associated bibtex file on the repository.},
+	urldate = {2021-09-20},
+	journal = {arXiv:2101.05204 [cs]},
+	author = {Dellaert, Frank and Yen-Chen, Lin},
+	month = jan,
+	year = {2021},
+	note = {arXiv: 2101.05204},
+	keywords = {Computer Science - Computer Vision and Pattern Recognition, Computer Science - Graphics},
+	annote = {Comment: Blog: https://dellaert.github.io/NeRF/ Bibtex: https://github.com/yenchenlin/awesome-NeRF},
+	annote = {Comment: Blog: https://dellaert.github.io/NeRF/ Bibtex: https://github.com/yenchenlin/awesome-NeRF},
+	file = {arXiv Fulltext PDF:/Users/yashsavani/Zotero/storage/ZTZR2FDW/Dellaert and Yen-Chen - 2021 - Neural Volume Rendering NeRF And Beyond.pdf:application/pdf;arXiv.org Snapshot:/Users/yashsavani/Zotero/storage/Y2J8WAJB/2101.html:text/html;arXiv Fulltext PDF:/Users/yashsavani/Zotero/storage/4TM8MD92/Dellaert and Yen-Chen - 2021 - Neural Volume Rendering NeRF And Beyond.pdf:application/pdf;arXiv.org Snapshot:/Users/yashsavani/Zotero/storage/PWIIPBHS/2101.html:text/html},
+}
+
+@misc{noauthor_nerf_2020,
+	title = {{NeRF} {Explosion} 2020},
+	url = {https://dellaert.github.io/NeRF/},
+	language = {en},
+	urldate = {2021-09-20},
+	journal = {Frank Dellaert},
+	month = dec,
+	year = {2020},
+	file = {Snapshot:/Users/yashsavani/Zotero/storage/2BFRHXMZ/NeRF.html:text/html},
+}
+
+@misc{noauthor_index_nodate,
+	title = {Index of /{\textasciitilde}viscomp/projects/{LF}/papers/{ECCV20}/nerf},
+	url = {https://cseweb.ucsd.edu/~viscomp/projects/LF/papers/ECCV20/nerf/},
+	urldate = {2021-09-20},
+	file = {Index of /~viscomp/projects/LF/papers/ECCV20/nerf:/Users/yashsavani/Zotero/storage/H6BG5U8N/nerf.html:text/html},
+}
+
+@article{yu_pixelnerf_2021,
+	title = {{pixelNeRF}: {Neural} {Radiance} {Fields} from {One} or {Few} {Images}},
+	shorttitle = {{pixelNeRF}},
+	url = {http://arxiv.org/abs/2012.02190},
+	abstract = {We propose pixelNeRF, a learning framework that predicts a continuous neural scene representation conditioned on one or few input images. The existing approach for constructing neural radiance fields involves optimizing the representation to every scene independently, requiring many calibrated views and significant compute time. We take a step towards resolving these shortcomings by introducing an architecture that conditions a NeRF on image inputs in a fully convolutional manner. This allows the network to be trained across multiple scenes to learn a scene prior, enabling it to perform novel view synthesis in a feed-forward manner from a sparse set of views (as few as one). Leveraging the volume rendering approach of NeRF, our model can be trained directly from images with no explicit 3D supervision. We conduct extensive experiments on ShapeNet benchmarks for single image novel view synthesis tasks with held-out objects as well as entire unseen categories. We further demonstrate the flexibility of pixelNeRF by demonstrating it on multi-object ShapeNet scenes and real scenes from the DTU dataset. In all cases, pixelNeRF outperforms current state-of-the-art baselines for novel view synthesis and single image 3D reconstruction. For the video and code, please visit the project website: https://alexyu.net/pixelnerf},
+	urldate = {2021-09-20},
+	journal = {arXiv:2012.02190 [cs]},
+	author = {Yu, Alex and Ye, Vickie and Tancik, Matthew and Kanazawa, Angjoo},
+	month = may,
+	year = {2021},
+	note = {arXiv: 2012.02190},
+	keywords = {Computer Science - Machine Learning, Computer Science - Computer Vision and Pattern Recognition, Computer Science - Graphics},
+	annote = {Comment: CVPR 2021},
+	file = {arXiv Fulltext PDF:/Users/yashsavani/Zotero/storage/FBYMKKNR/Yu et al. - 2021 - pixelNeRF Neural Radiance Fields from One or Few .pdf:application/pdf;arXiv.org Snapshot:/Users/yashsavani/Zotero/storage/8R2UVGSQ/2012.html:text/html},
+}
+
+@article{sitzmann_implicit_2020,
+	title = {Implicit {Neural} {Representations} with {Periodic} {Activation} {Functions}},
+	url = {http://arxiv.org/abs/2006.09661},
+	abstract = {Implicitly defined, continuous, differentiable signal representations parameterized by neural networks have emerged as a powerful paradigm, offering many possible benefits over conventional representations. However, current network architectures for such implicit neural representations are incapable of modeling signals with fine detail, and fail to represent a signal's spatial and temporal derivatives, despite the fact that these are essential to many physical signals defined implicitly as the solution to partial differential equations. We propose to leverage periodic activation functions for implicit neural representations and demonstrate that these networks, dubbed sinusoidal representation networks or Sirens, are ideally suited for representing complex natural signals and their derivatives. We analyze Siren activation statistics to propose a principled initialization scheme and demonstrate the representation of images, wavefields, video, sound, and their derivatives. Further, we show how Sirens can be leveraged to solve challenging boundary value problems, such as particular Eikonal equations (yielding signed distance functions), the Poisson equation, and the Helmholtz and wave equations. Lastly, we combine Sirens with hypernetworks to learn priors over the space of Siren functions.},
+	urldate = {2021-09-21},
+	journal = {arXiv:2006.09661 [cs, eess]},
+	author = {Sitzmann, Vincent and Martel, Julien N. P. and Bergman, Alexander W. and Lindell, David B. and Wetzstein, Gordon},
+	month = jun,
+	year = {2020},
+	note = {arXiv: 2006.09661},
+	keywords = {Computer Science - Computer Vision and Pattern Recognition, Computer Science - Machine Learning, Electrical Engineering and Systems Science - Image and Video Processing},
+	annote = {Comment: Project website: https://vsitzmann.github.io/siren/ Project video: https://youtu.be/Q2fLWGBeaiI},
+	file = {arXiv Fulltext PDF:/Users/yashsavani/Zotero/storage/BW5YHK6P/Sitzmann et al. - 2020 - Implicit Neural Representations with Periodic Acti.pdf:application/pdf;arXiv.org Snapshot:/Users/yashsavani/Zotero/storage/7P5ZQ7UE/2006.html:text/html},
+}
+
+@inproceedings{mescheder_occupancy_2019,
+	title = {Occupancy networks: {Learning} 3d reconstruction in function space},
+	booktitle = {Proceedings of the {IEEE}/{CVF} {Conference} on {Computer} {Vision} and {Pattern} {Recognition}},
+	author = {Mescheder, Lars and Oechsle, Michael and Niemeyer, Michael and Nowozin, Sebastian and Geiger, Andreas},
+	year = {2019},
+	pages = {4460--4470},
+}
+
+@inproceedings{chen_learning_2019,
+	title = {Learning implicit fields for generative shape modeling},
+	booktitle = {Proceedings of the {IEEE}/{CVF} {Conference} on {Computer} {Vision} and {Pattern} {Recognition}},
+	author = {Chen, Zhiqin and Zhang, Hao},
+	year = {2019},
+	pages = {5939--5948},
+}
+
+@inproceedings{park_deepsdf_2019,
+	title = {Deepsdf: {Learning} continuous signed distance functions for shape representation},
+	booktitle = {Proceedings of the {IEEE}/{CVF} {Conference} on {Computer} {Vision} and {Pattern} {Recognition}},
+	author = {Park, Jeong Joon and Florence, Peter and Straub, Julian and Newcombe, Richard and Lovegrove, Steven},
+	year = {2019},
+	pages = {165--174},
+}
+
+@inproceedings{saito_pifu_2019,
+	title = {Pifu: {Pixel}-aligned implicit function for high-resolution clothed human digitization},
+	booktitle = {Proceedings of the {IEEE}/{CVF} {International} {Conference} on {Computer} {Vision}},
+	author = {Saito, Shunsuke and Huang, Zeng and Natsume, Ryota and Morishima, Shigeo and Kanazawa, Angjoo and Li, Hao},
+	year = {2019},
+	pages = {2304--2314},
+}
+
+@inproceedings{deng_cvxnet_2020,
+	title = {Cvxnet: {Learnable} convex decomposition},
+	booktitle = {Proceedings of the {IEEE}/{CVF} {Conference} on {Computer} {Vision} and {Pattern} {Recognition}},
+	author = {Deng, Boyang and Genova, Kyle and Yazdani, Soroosh and Bouaziz, Sofien and Hinton, Geoffrey and Tagliasacchi, Andrea},
+	year = {2020},
+	pages = {31--44},
+}
+
+@inproceedings{chen_bsp-net_2020,
+	title = {Bsp-net: {Generating} compact meshes via binary space partitioning},
+	booktitle = {Proceedings of the {IEEE}/{CVF} {Conference} on {Computer} {Vision} and {Pattern} {Recognition}},
+	author = {Chen, Zhiqin and Tagliasacchi, Andrea and Zhang, Hao},
+	year = {2020},
+	pages = {45--54},
+}
+
+@inproceedings{chabra_deep_2020,
+	title = {Deep local shapes: {Learning} local sdf priors for detailed 3d reconstruction},
+	publisher = {Springer},
+	author = {Chabra, Rohan and Lenssen, Jan E and Ilg, Eddy and Schmidt, Tanner and Straub, Julian and Lovegrove, Steven and Newcombe, Richard},
+	year = {2020},
+	pages = {608--625},
+}
+
+@inproceedings{sitzmann_scene_2019,
+	title = {Scene {Representation} {Networks}: {Continuous} {3D}-{Structure}-{Aware} {Neural} {Scene} {Representations}},
+	volume = {32},
+	shorttitle = {Scene {Representation} {Networks}},
+	url = {https://papers.nips.cc/paper/2019/hash/b5dc4e5d9b495d0196f61d45b26ef33e-Abstract.html},
+	urldate = {2021-09-24},
+	booktitle = {Advances in {Neural} {Information} {Processing} {Systems}},
+	publisher = {Curran Associates, Inc.},
+	author = {Sitzmann, Vincent and Zollhoefer, Michael and Wetzstein, Gordon},
+	year = {2019},
+	file = {Full Text PDF:/Users/yashsavani/Zotero/storage/MGWTLY54/Sitzmann et al. - 2019 - Scene Representation Networks Continuous 3D-Struc.pdf:application/pdf},
+}
+
+@inproceedings{niemeyer_differentiable_2020,
+	title = {Differentiable volumetric rendering: {Learning} implicit 3d representations without 3d supervision},
+	booktitle = {Proceedings of the {IEEE}/{CVF} {Conference} on {Computer} {Vision} and {Pattern} {Recognition}},
+	author = {Niemeyer, Michael and Mescheder, Lars and Oechsle, Michael and Geiger, Andreas},
+	year = {2020},
+	pages = {3504--3515},
+}
+
+@article{yariv_universal_2020,
+	title = {Universal differentiable renderer for implicit neural representations},
+	author = {Yariv, Lior and Atzmon, Matan and Lipman, Yaron},
+	year = {2020},
+}
+
+@inproceedings{deng_nasa_2020,
+	title = {{NASA} neural articulated shape approximation},
+	isbn = {3-030-58570-0},
+	booktitle = {Computer {Vision}–{ECCV} 2020: 16th {European} {Conference}, {Glasgow}, {UK}, {August} 23–28, 2020, {Proceedings}, {Part} {VII} 16},
+	publisher = {Springer},
+	author = {Deng, Boyang and Lewis, John P. and Jeruzalski, Timothy and Pons-Moll, Gerard and Hinton, Geoffrey and Norouzi, Mohammad and Tagliasacchi, Andrea},
+	year = {2020},
+	pages = {612--628},
+}
+
+@article{lombardi_neural_2019,
+	title = {Neural volumes: {Learning} dynamic renderable volumes from images},
+	journal = {arXiv preprint arXiv:1906.07751},
+	author = {Lombardi, Stephen and Simon, Tomas and Saragih, Jason and Schwartz, Gabriel and Lehrmann, Andreas and Sheikh, Yaser},
+	year = {2019},
+}
+
+@article{tancik_fourier_2020,
+	title = {Fourier features let networks learn high frequency functions in low dimensional domains},
+	journal = {arXiv preprint arXiv:2006.10739},
+	author = {Tancik, Matthew and Srinivasan, Pratul P. and Mildenhall, Ben and Fridovich-Keil, Sara and Raghavan, Nithin and Singhal, Utkarsh and Ramamoorthi, Ravi and Barron, Jonathan T. and Ng, Ren},
+	year = {2020},
+}
+
+@article{liu_neural_2020,
+	title = {Neural sparse voxel fields},
+	journal = {arXiv preprint arXiv:2007.11571},
+	author = {Liu, Lingjie and Gu, Jiatao and Lin, Kyaw Zaw and Chua, Tat-Seng and Theobalt, Christian},
+	year = {2020},
+}
+
+@inproceedings{rebain_derf_2021,
+	title = {Derf: {Decomposed} radiance fields},
+	booktitle = {Proceedings of the {IEEE}/{CVF} {Conference} on {Computer} {Vision} and {Pattern} {Recognition}},
+	author = {Rebain, Daniel and Jiang, Wei and Yazdani, Soroosh and Li, Ke and Yi, Kwang Moo and Tagliasacchi, Andrea},
+	year = {2021},
+	pages = {14153--14161},
+}
+
+@inproceedings{lindell_autoint_2021,
+	title = {Autoint: {Automatic} integration for fast neural volume rendering},
+	booktitle = {Proceedings of the {IEEE}/{CVF} {Conference} on {Computer} {Vision} and {Pattern} {Recognition}},
+	author = {Lindell, David B. and Martel, Julien NP and Wetzstein, Gordon},
+	year = {2021},
+	pages = {14556--14565},
+}
+
+@inproceedings{tancik_learned_2021,
+	title = {Learned initializations for optimizing coordinate-based neural representations},
+	booktitle = {Proceedings of the {IEEE}/{CVF} {Conference} on {Computer} {Vision} and {Pattern} {Recognition}},
+	author = {Tancik, Matthew and Mildenhall, Ben and Wang, Terrance and Schmidt, Divi and Srinivasan, Pratul P. and Barron, Jonathan T. and Ng, Ren},
+	year = {2021},
+	pages = {2846--2855},
+}
+
+@misc{noauthor_google-researchjaxnerf_nodate,
+	title = {google-research/jaxnerf at master · google-research/google-research},
+	url = {https://github.com/google-research/google-research},
+	abstract = {Google Research. Contribute to google-research/google-research development by creating an account on GitHub.},
+	language = {en},
+	urldate = {2021-09-24},
+	journal = {GitHub},
+}
+
+@article{park_deformable_2020,
+	title = {Deformable neural radiance fields},
+	journal = {arXiv preprint arXiv:2011.12948},
+	author = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B. and Seitz, Steven M. and Martin-Brualla, Ricardo},
+	year = {2020},
+}
+
+@inproceedings{xian_space-time_2021,
+	title = {Space-time neural irradiance fields for free-viewpoint video},
+	booktitle = {Proceedings of the {IEEE}/{CVF} {Conference} on {Computer} {Vision} and {Pattern} {Recognition}},
+	author = {Xian, Wenqi and Huang, Jia-Bin and Kopf, Johannes and Kim, Changil},
+	year = {2021},
+	pages = {9421--9431},
+}
+
+@inproceedings{li_neural_2021,
+	title = {Neural scene flow fields for space-time view synthesis of dynamic scenes},
+	booktitle = {Proceedings of the {IEEE}/{CVF} {Conference} on {Computer} {Vision} and {Pattern} {Recognition}},
+	author = {Li, Zhengqi and Niklaus, Simon and Snavely, Noah and Wang, Oliver},
+	year = {2021},
+	pages = {6498--6508},
+}
+
+@inproceedings{pumarola_d-nerf_2021,
+	title = {D-nerf: {Neural} radiance fields for dynamic scenes},
+	booktitle = {Proceedings of the {IEEE}/{CVF} {Conference} on {Computer} {Vision} and {Pattern} {Recognition}},
+	author = {Pumarola, Albert and Corona, Enric and Pons-Moll, Gerard and Moreno-Noguer, Francesc},
+	year = {2021},
+	pages = {10318--10327},
+}
+
+@article{du_neural_2020,
+	title = {Neural radiance flow for 4d view synthesis and video processing},
+	journal = {arXiv preprint arXiv:2012.09790},
+	author = {Du, Yilun and Zhang, Yinan and Yu, Hong-Xing and Tenenbaum, Joshua B. and Wu, Jiajun},
+	year = {2020},
+}
+
+@article{yen-chen_inerf_2020,
+	title = {inerf: {Inverting} neural radiance fields for pose estimation},
+	journal = {arXiv preprint arXiv:2012.05877},
+	author = {Yen-Chen, Lin and Florence, Pete and Barron, Jonathan T. and Rodriguez, Alberto and Isola, Phillip and Lin, Tsung-Yi},
+	year = {2020},
+}
+
+@inproceedings{schonberger_structure--motion_2016,
+	title = {Structure-from-motion revisited},
+	booktitle = {Proceedings of the {IEEE} conference on computer vision and pattern recognition},
+	author = {Schonberger, Johannes L. and Frahm, Jan-Michael},
+	year = {2016},
+	pages = {4104--4113},
+}
+
+@inproceedings{schonberger_pixelwise_2016,
+	title = {Pixelwise view selection for unstructured multi-view stereo},
+	booktitle = {European {Conference} on {Computer} {Vision}},
+	publisher = {Springer},
+	author = {Schönberger, Johannes L. and Zheng, Enliang and Frahm, Jan-Michael and Pollefeys, Marc},
+	year = {2016},
+	pages = {501--518},
+}
+
+@inproceedings{martin-brualla_nerf_2021,
+	title = {Nerf in the wild: {Neural} radiance fields for unconstrained photo collections},
+	booktitle = {Proceedings of the {IEEE}/{CVF} {Conference} on {Computer} {Vision} and {Pattern} {Recognition}},
+	author = {Martin-Brualla, Ricardo and Radwan, Noha and Sajjadi, Mehdi SM and Barron, Jonathan T. and Dosovitskiy, Alexey and Duckworth, Daniel},
+	year = {2021},
+	pages = {7210--7219},
+}
+
+@article{jeong_self-calibrating_2021,
+	title = {Self-{Calibrating} {Neural} {Radiance} {Fields}},
+	journal = {arXiv preprint arXiv:2108.13826},
+	author = {Jeong, Yoonwoo and Ahn, Seokjun and Choy, Christopher and Anandkumar, Animashree and Cho, Minsu and Park, Jaesik},
+	year = {2021},
+}
+
+@article{reiser_kilonerf_2021,
+	title = {{KiloNeRF}: {Speeding} up {Neural} {Radiance} {Fields} with {Thousands} of {Tiny} {MLPs}},
+	shorttitle = {{KiloNeRF}},
+	url = {http://arxiv.org/abs/2103.13744},
+	abstract = {NeRF synthesizes novel views of a scene with unprecedented quality by fitting a neural radiance field to RGB images. However, NeRF requires querying a deep Multi-Layer Perceptron (MLP) millions of times, leading to slow rendering times, even on modern GPUs. In this paper, we demonstrate that real-time rendering is possible by utilizing thousands of tiny MLPs instead of one single large MLP. In our setting, each individual MLP only needs to represent parts of the scene, thus smaller and faster-to-evaluate MLPs can be used. By combining this divide-and-conquer strategy with further optimizations, rendering is accelerated by three orders of magnitude compared to the original NeRF model without incurring high storage costs. Further, using teacher-student distillation for training, we show that this speed-up can be achieved without sacrificing visual quality.},
+	urldate = {2021-09-24},
+	journal = {arXiv:2103.13744 [cs]},
+	author = {Reiser, Christian and Peng, Songyou and Liao, Yiyi and Geiger, Andreas},
+	month = aug,
+	year = {2021},
+	note = {arXiv: 2103.13744},
+	keywords = {Computer Science - Computer Vision and Pattern Recognition},
+	annote = {Comment: ICCV 2021. Code, pretrained models and an interactive viewer are available at https://github.com/creiser/kilonerf/},
+	file = {arXiv Fulltext PDF:/Users/yashsavani/Zotero/storage/J5TFA7HH/Reiser et al. - 2021 - KiloNeRF Speeding up Neural Radiance Fields with .pdf:application/pdf;arXiv.org Snapshot:/Users/yashsavani/Zotero/storage/KJ9D5LW6/2103.html:text/html},
+}
+
+@article{kabra_simone_2021,
+	title = {{SIMONe}: {View}-{Invariant}, {Temporally}-{Abstracted} {Object} {Representations} via {Unsupervised} {Video} {Decomposition}},
+	journal = {arXiv preprint arXiv:2106.03849},
+	author = {Kabra, Rishabh and Zoran, Daniel and Erdogan, Goker and Matthey, Loic and Creswell, Antonia and Botvinick, Matthew and Lerchner, Alexander and Burgess, Christopher P.},
+	year = {2021},
+}
+
+@inproceedings{mildenhall_nerf_2020,
+	title = {Nerf: {Representing} scenes as neural radiance fields for view synthesis},
+	booktitle = {European conference on computer vision},
+	publisher = {Springer},
+	author = {Mildenhall, Ben and Srinivasan, Pratul P. and Tancik, Matthew and Barron, Jonathan T. and Ramamoorthi, Ravi and Ng, Ren},
+	year = {2020},
+	pages = {405--421},
+}
